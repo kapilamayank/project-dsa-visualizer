@@ -45,3 +45,47 @@ void bubbleSort(std::vector<ArrayBox *> arr) {
 	}	
 }
 
+void insertionSort(std::vector<ArrayBox *> arr) {
+	int n = arr.size();
+	
+	//arr[0]->highlightBox(BLUE);
+	
+	for (int i=0; i < n; i++) {
+		int j;
+		for (j=i; j>0; j--) {
+			arr[j]->highlightBox(GREEN);
+			delay(500);
+			if (arr[j]->value <= arr[j-1]->value) {
+				
+				int temp = arr[j-1]->value;
+				arr[j-1]->value = arr[j]->value;
+				arr[j]->value = temp;
+				
+				arr[j-1]->clearBox();
+				arr[j]->clearBox();
+				delay(1000);
+				
+				arr[j-1]->drawBox();
+				arr[j]->drawBox();
+				
+				
+				arr[j]->highlightBox(BLUE);
+				arr[j-1]->highlightBox(GREEN);
+				
+				delay(500);
+			}
+			else {
+				break;
+			}
+		}
+		delay(250);
+		arr[j]->highlightBox(BLUE);
+		delay(250);
+	}
+}
+
+
+
+
+
+

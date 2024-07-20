@@ -12,6 +12,8 @@ int SCREEN_WIDTH = 1200;
 int SCREEN_HEIGHT = 1000;
 
 std::string convertIntToString(int val){
+	if (val == 0)	return "0";
+	
 	std::string helperString = "";
 	while(val > 0) {
 		char endChar = val%10 + (int)'0';
@@ -96,10 +98,10 @@ void ArrayBox::innerColorBox(int color) {
 }
 
 void ArrayBox::clearBox() {
-	this->drawBoxOutline();
+	//this->drawBoxOutline();
 	
 	setfillstyle(SOLID_FILL, BLACK);
-	bar(this->x+10, this->y+10, this->x+this->width-10, this->x+this->height-10);
+	bar(this->x+5, this->y+5, this->x+this->width-5, this->x+this->height-5);
 }
 
 
