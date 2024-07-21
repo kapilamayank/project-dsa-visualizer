@@ -41,7 +41,8 @@ class ArrayBox {
 
 std::vector<ArrayBox *> drawArray(int *arr, int n) ;
 
-void bubbleSort(std::vector<ArrayBox *> arr) ;
+void selectionSort(std::vector<ArrayBox *> arr) ;
 void insertionSort(std::vector<ArrayBox *> arr) ;
+void bubbleSort(std::vector<ArrayBox *> arr);
 
 #endif

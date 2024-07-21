@@ -1,7 +1,7 @@
 #include "header.h"
 #include<vector>
 
-void bubbleSort(std::vector<ArrayBox *> arr) {
+void selectionSort(std::vector<ArrayBox *> arr) {
 	int n = arr.size();
 	
 	for (int i = 0; i < n; i++) {
@@ -63,7 +63,6 @@ void insertionSort(std::vector<ArrayBox *> arr) {
 				
 				arr[j-1]->clearBox();
 				arr[j]->clearBox();
-				delay(1000);
 				
 				arr[j-1]->drawBox();
 				arr[j]->drawBox();
@@ -84,7 +83,44 @@ void insertionSort(std::vector<ArrayBox *> arr) {
 	}
 }
 
-
+void bubbleSort(std::vector<ArrayBox *> arr) {
+	int n = arr.size();
+	
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n-1-i; j++) {
+			arr[j]->highlightBox(YELLOW);
+			arr[j+1]->highlightBox(YELLOW);
+			delay(1000);
+			if (arr[j]->value > arr[j+1]->value) {
+				int temp = arr[j]->value;
+				arr[j]->value = arr[j+1]->value;
+				arr[j+1]->value = temp;
+				
+				arr[j]->clearBox();
+				arr[j+1]->clearBox();
+				
+				arr[j]->drawBox();
+				arr[j+1]->drawBox();
+				
+				arr[j]->highlightBox(GREEN);
+				arr[j+1]->highlightBox(GREEN);
+				delay(500);
+			}
+			else{
+				arr[j]->highlightBox(RED);
+				arr[j+1]->highlightBox(RED);
+				delay(500);
+			}
+			
+			arr[j]->unHighlightBox();
+			arr[j+1]->unHighlightBox();
+			delay(250);
+		}
+		
+		arr[n-1-i]->colorBox(BLUE);
+		delay(500);
+	}
+}
 
 
 

@@ -27,8 +27,6 @@ main() {
 	std::vector<ArrayBox *> arr = drawArray(inputArray, n);
 	delay(500);
 	bubbleSort(arr);
-//	std::cout << arr[0]->value << std::endl;
-	
 	
 	getch();
 }

@@ -14,6 +14,12 @@ int SCREEN_HEIGHT = 1000;
 std::string convertIntToString(int val){
 	if (val == 0)	return "0";
 	
+	bool isNegative = false;
+	if (val < 0) {
+		val = -val;
+		isNegative = true;
+	}
+	
 	std::string helperString = "";
 	while(val > 0) {
 		char endChar = val%10 + (int)'0';
@@ -25,6 +31,10 @@ std::string convertIntToString(int val){
 	
 	for(int i = helperString.length()-1; i >= 0; i--) {
 		returnString += helperString[i];
+	}
+	
+	if (isNegative) {
+		returnString = "-"+returnString;
 	}
 	
 	return returnString;
@@ -101,7 +111,7 @@ void ArrayBox::clearBox() {
 	//this->drawBoxOutline();
 	
 	setfillstyle(SOLID_FILL, BLACK);
-	bar(this->x+5, this->y+5, this->x+this->width-5, this->x+this->height-5);
+	bar(this->x+5, this->y+5, this->x+this->width-5, this->y+this->height-5);
 }
 
 
