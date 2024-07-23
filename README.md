@@ -4,11 +4,11 @@
 As a beginner, certain DSA fundamentals can be hard to grasp. Incomplete knowledge of these fundamentals becomes a hurdle in gaining a proper understanding of how
 more complex things work.
 
-The aim of this project is to help the users ***visualize*** certain ***DSA concepts*** such as tree traversals and sorting algorithms, which initially can be tricky
+The aim of this project is to help the users <ins>***visualize***</ins> certain <ins>***DSA concepts***</ins> such as tree traversals and sorting algorithms, which initially can be tricky
 to grasp. This allows for a deeper understanding of how these algorithms work can be acquired. 
 
 ### How was it built ?
-The entire project was built using the ***low-level*** ***graphics.h*** library in C++, which allows the developer some basic functionalities like drawing shapes, and 
+The entire project was built using the <ins>***low-level*** ***graphics.h***</ins> library in C++, which allows the developer some basic functionalities like drawing shapes, and 
 coloring these shapes. The library itself does not support enough functionalities to create dynamic elements which can be freely positioned and controlled (like
 ``<div>`` in HTML). The functionality of the library was extended using OOPS concepts to create such dynamic elements.
 
