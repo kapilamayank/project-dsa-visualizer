@@ -18,13 +18,13 @@ attached with this README down below.
 
 ### Demo Pictures
 #### Tree Traversal Window
-<img src="https://github.com/user-attachments/assets/b970fa95-d1bb-4745-a399-35811079b7dd" width=300 height=300>
+<img src="https://github.com/user-attachments/assets/b970fa95-d1bb-4745-a399-35811079b7dd" width=350 height=300>
 
 #### Level Order Traversal
-<img src="https://github.com/user-attachments/assets/eb9979c0-2fac-4d77-87dc-2da2d4dddaea" width=300 height=300>
+<img src="https://github.com/user-attachments/assets/eb9979c0-2fac-4d77-87dc-2da2d4dddaea" width=350 height=300>
 
 #### Sorting Algorithmn Window
-<img src="https://github.com/user-attachments/assets/2c3800c5-c328-4127-99b9-71dda4059f6e" width=300 height=300>
+<img src="https://github.com/user-attachments/assets/2c3800c5-c328-4127-99b9-71dda4059f6e" width=350 height=300>
 
 #### Bubble Sort
 <img src="https://github.com/user-attachments/assets/a8a7f3f2-1f0c-4b04-a252-d3dc5d9964ac" width=400 height=300>
