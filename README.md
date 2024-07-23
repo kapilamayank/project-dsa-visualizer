@@ -8,7 +8,7 @@ The aim of this project is to help the users **visualize** certain **DSA concept
 to grasp. This allows for a deeper understanding of how these algorithms work can be acquired. 
 
 ### How was it built ?
-The entire project was built using the **low-level** **graphics.h** library in C++, which allows the developer some basic functionalities like drawing shapes, and <br>
+The entire project was built using the **low-level** **graphics.h** library in C++, which allows the developer some basic functionalities like drawing shapes, and 
 coloring these shapes. The library itself does not support enough functionalities to create dynamic elements which can be freely positioned and controlled (like
 ``<div>`` in HTML. The functionality of the library was extended using OOPS concepts to create such dynamic elements.
 
