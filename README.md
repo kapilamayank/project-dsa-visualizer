@@ -10,14 +10,11 @@ to grasp. This allows for a deeper understanding of how these algorithms work ca
 ### How was it built ?
 The entire project was built using the **low-level** **graphics.h** library in C++, which allows the developer some basic functionalities like drawing shapes, and 
 coloring these shapes. The library itself does not support enough functionalities to create dynamic elements which can be freely positioned and controlled (like
-``<div>`` in HTML. The functionality of the library was extended using OOPS concepts to create such dynamic elements.
+``<div>`` in HTML). The functionality of the library was extended using OOPS concepts to create such dynamic elements.
 
 ### How to use ?
-Directly download the needed executable files from the repo, and give the necessary permissions to see the visualizations. Otherwise a demo link is attached with
-this README down below.
-
-### Note : 
-Graph visualizations will soon be added. In case you want to contribute to the project, create a pull request.
+Directly download the needed executable files from the repo, and give the necessary permissions to run the visualization program. Otherwise, a demo link is 
+attached with this README down below.
 
 ### Demo Pictures
 #### Tree Traversal Window
@@ -32,3 +29,4 @@ Graph visualizations will soon be added. In case you want to contribute to the p
 #### Bubble Sort
 <img src="https://github.com/user-attachments/assets/a8a7f3f2-1f0c-4b04-a252-d3dc5d9964ac" width=400 height=300>
 
+> :memo: **Note:** Graph visualizations will soon be added. In case you want to contribute to the project, create a pull request.
